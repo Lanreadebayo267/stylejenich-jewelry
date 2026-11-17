@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All pieces | StyleJenich Jewelry</title>
+  <meta name="description" content="Every necklace and earring from StyleJenich Jewelry. Filter by type, search, and order on WhatsApp.">
+  <meta name="theme-color" content="#12301f">
+  <meta property="og:title" content="All pieces | StyleJenich Jewelry">
+  <meta property="og:description" content="Every necklace and earring from StyleJenich Jewelry. Order on WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312301f'/%3E%3Cpath d='M32 14l12 14-12 22L20 28z' fill='%23d4b26a'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Marcellus&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/data.js" defer></script>
+  <script src="js/art.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/collection.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#pieces">Skip to the pieces</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="StyleJenich Jewelry, home">Style<span>Jenich</span> Jewelry</a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="site-nav__link" href="index.html">Home</a>
+        <a class="site-nav__link" href="collection.html" aria-current="page">All pieces</a>
+        <a class="btn btn--ghost site-nav__cta" id="header-whatsapp" href="#">Order on WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="page-head" aria-labelledby="page-title">
+        <p class="label">The full collection</p>
+        <h1 id="page-title">All pieces</h1>
+        <p class="page-head__lead">Everything we have right now. See one you like? Tap Order via WhatsApp on it and we will take it from there.</p>
+      </section>
+
+      <section class="section section--tight" id="pieces" aria-label="Pieces">
+        <div class="controls">
+          <div class="filters" id="filters" role="group" aria-label="Filter pieces by type"></div>
+          <form class="search" id="search-form" role="search">
+            <label for="search">Search pieces</label>
+            <input id="search" name="search" type="search" placeholder="Try &quot;pearl&quot; or &quot;hoop&quot;" autocomplete="off">
+          </form>
+        </div>
+
+        <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="empty" hidden>No pieces match that search. Try another word, or ask us on WhatsApp.</p>
+      </section>
+    </div>
+
+    <section class="contact-band cta" aria-labelledby="cta-title">
+      <div class="wrap cta__inner">
+        <div>
+          <p class="label">Custom orders</p>
+          <h2 id="cta-title">Can't see what you're looking for?</h2>
+          <p class="contact__lead">Tell us what you have in mind and we will let you know what we can do.</p>
+        </div>
+        <a class="btn btn--gold" id="cta-whatsapp" href="#">Chat on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <span id="year"></span>
+    <span>StyleJenich Jewelry</span>
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </footer>
+
+  <a class="btn btn--gold fab" id="fab-whatsapp" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+</body>
+</html>
